@@ -18,3 +18,48 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+
+#speaker-box h3, #speaker-box h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#speaker-box h3 {
+    font-style: normal;
+    line-height: .9em;
+    font-family: 'Baloo Bhai';
+    color: #115f79;
+}
+
+#speaker-box h4 {
+    color: #973c26;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+
+#speaker-box img {
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+#speaker-box p {
+    color: #1e3a40;
+    font-size: .9em;
+}
+
+#speaker-box #next_btn, #speaker-box #prev_btn {
+    background: #d33682;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+#speaker-box a#next_btn, #speaker-box a#prev_btn {
+    text-decoration: none;
+    color: #fff;
+}
