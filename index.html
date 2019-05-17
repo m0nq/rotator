@@ -8,9 +8,28 @@
   <div id="speaker-box">
     <div id="carousel"></div>
   </div>
+  <script type="text/x-handlebars-template" id="speakers">
+      {{#speakers}}
+      <div class="speaker">
+          <img src="./images/{{shortname}}_tn.jpg" alt="Photo of {{name}}">
+          <h3>{{name}}</h3>
+          <h4>{{reknown}}</h4>
+          <p>{{bio}}</p>
+      </div>
+      {{/speakers}}
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script type="text/javascript">
+        $(() => {
+          $.getJSON('data.json', data => {
+            let template = $('#speakers').html();
+            let html = Mustache.to_html(template, data);
+            $('#carousel').html(html);
+          });
+        });
+    </script>
 </body>
 </html>
