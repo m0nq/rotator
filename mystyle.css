@@ -1,0 +1,20 @@
+/* @override
+	http://iviewsource.com/exercises/json/mystyle.css */
+
+body {
+    background: #eee705;
+    font-family: 'Open Sans';
+}
+
+.speaker {
+    background: transparent !important;
+}
+
+#speaker-box {
+    width: 300px;
+    margin: 0 auto;
+    background: #93a1a1;
+    padding: 1px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
